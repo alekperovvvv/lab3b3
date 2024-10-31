@@ -15,7 +15,7 @@
 
     <form action="{{ route('contacts.store', $post) }}" method="POST">
         @csrf
-        <textarea name="content" placeholder="введите номер" required></textarea>
+        <textarea name="content" inputmode="number" placeholder="введите номер" required></textarea>
         <button type="submit">Добавить информацию к контакту</button>
     </form>
 
@@ -26,5 +26,7 @@
     </ul>
 
     <a href="{{ route('posts.index') }}">Вернутся назад</a>
+    <p>Выполнено студентом группы И-215</p>
+    <p>Алекперов Заур Касумович</p>
 </body>
 </html>

@@ -14,7 +14,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts/app');
 });
 Route::resource('posts', PostController::class);
 Route::post('posts/{post}/comments', [ContactController::class, 'store'])->name('contacts.store');

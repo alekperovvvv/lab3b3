@@ -7,7 +7,7 @@
         @csrf
         <div>
         <label for="title">Номер телефона:</label>
-        <input type="text" name="title" required>
+        <input type="number" name="title" required>
         </div>
         <div>
         <label for="author">Наименование контакта</label>
